@@ -6,7 +6,7 @@ frpc_pid=`ps -ef | grep frpc | grep -v "grep" | grep -v $shell_name | awk '{prin
 # kill frpc
 if [ "$frpc_pid" != "" ]; then
 	kill -9 $frpc_pid
-	echo "frpc client is closed"
+	echo "Stop frpc client success."
 else
 	echo "frpc client is not run."
 fi
